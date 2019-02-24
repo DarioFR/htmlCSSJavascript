@@ -1,0 +1,48 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(header.jpg);
+}
+
+.container-custom {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 370px;
+}
+
+.findout_btn {
+    position: relative;
+    top: 250px;
+    left: 100px;
+    border-radius: 100px 100px 100px 100px;
+}
+
+header.startup {
+    margin-top: 380px;
+}
+
+/*.mainTitle{*/
+/*width:100%;*/
+/*color: white;*/
+/*font-weight: bold;*/
+/*font-size:30px;*/
+/*text-transform: uppercase;*/
+/*position:relative;*/
+/*top:-700px;*/
+/*left:450px;*/
+/*margin:0 auto;*/
+/*!*display: flex;*!*/
+/*!*align-content:center;*!*/
+/*!*justify-content: center;*!*/
+/*}*/
