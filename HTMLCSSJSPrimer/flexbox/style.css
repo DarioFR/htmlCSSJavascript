@@ -114,7 +114,12 @@ h1 {
 
 .left_eye {
     /* position:relative posiziona l'elemento relativamente alla sua posizione iniziale.
-     se l'elemento è contenuto in un contenitore allora lo posiziona relativamente al contenitore*/
+     se l'elemento è contenuto in un contenitore allora lo posiziona relativamente al contenitore
+     position:absolute posizione l'elemento rispetto alla pagina html stessa.
+     Se si usa position:absolute per un elemento contenuto in un altro elemento avente
+     position:relative, allora l'elemento figlio verrà posizionato relativamente
+     all'elemento padre.
+     */
     position: relative;
     top: 100px;
     left: 40px;
