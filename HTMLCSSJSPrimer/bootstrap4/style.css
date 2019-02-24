@@ -2,34 +2,66 @@ body,
 html {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(header.jpg);
+
+/*.container-custom {*/
+    /*text-transform: uppercase;*/
+    /*font-size: 30px;*/
+    /*color: white;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*position: relative;*/
+    /*top: 370px;*/
+/*}*/
+.faded {
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.container-custom {
+header.startup h1 {
+    font-size: 2rem;
+}
+
+hr {
+    max-width: 65px;
+    border-width: 3px;
+    border-color: #F05F44;
+}
+
+header.startup hr {
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 30px;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    top: 370px;
+    border-radius: 300px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.findout_btn {
-    position: relative;
-    top: 250px;
-    left: 100px;
-    border-radius: 100px 100px 100px 100px;
+.btn-xl {
+    padding: 1rem 2rem;
 }
+.btn-primary {
+    background-color: #F05F44;
+    border-color: #F05F44; }
+
+
 
 header.startup {
-    margin-top: 380px;
+    background-position: center;
+    background-image: url("header.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #ee4b08;
+    border-color: #ee4b08;
+    border-width: 5px;
+    cursor: pointer;
 }
 
 /*.mainTitle{*/
