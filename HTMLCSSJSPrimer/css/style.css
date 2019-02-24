@@ -1,0 +1,136 @@
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url("appleMAC.png");
+    background-size: cover;
+}
+
+/* "h2,p" applica lo stile a entrambi gli elementi specificati */
+
+/*h2, p {
+/*color: #AA4139;*/
+/*text-align: center;*/
+/*border: 5px rgb(0, 255, 0) dashed;*/
+/*cursor: pointer;
+}*/
+
+h2 {
+    color: #AA4139;
+    text-align: center;
+    border: 5px rgb(0, 255, 0) dashed;
+    /*mette il puntatore con la manina sul cursore del mouse*/
+    cursor: pointer;
+}
+
+span {
+    /* "em" è la dimensione dell'elemento che contiene il contenuto
+    ovvero in questo caso stiamo dicendo di dare una font size
+    5 volte maggiore della font size dichiarata nel p (elemento che in questo
+    caso contiene lo span). Avremmo anche potuto scrivere 100px e avremmo ottenuto
+     lo stesso risultato di 5em. */
+    font-size: 5em;
+}
+
+p {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    /*crea spaziatura tra le righe del paragrafo*/
+    line-height: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Times New Roman";
+}
+
+img {
+    float: right;
+}
+
+/*p {*/
+/*color: pink;*/
+/*border: 5px dotted rgba(255,0,0,0.5);*/
+/*}*/
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed green;
+}
+
+/*lo pseudoselettore "last-child"
+specifica una regola CSS da applicare all'ultimo figlio avente classe "webtext" presente in ciascun parent
+che fa da container (first-child è l'opposto) */
+.webtext:last-child {
+    border: 5px dashed red;
+}
+
+.active {
+    color: red;
+}
+
+/*Con comando rgba si specifica l'opacità del background con la 4a cifra */
+#div1 {
+    background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+#div1 .child1 {
+    background-color: aqua;
+}
+
+#div1.t1 {
+    background-color: aquamarine;
+}
+
+/*seleziona tutti i p figli di div */
+div p {
+    background-color: purple;
+}
+
+/* seleziona i p che sono figli diretti (senza altri elementi di mezzo nella gerarchia) di elementi con id=div3 */
+#div3 > p {
+    background-color: greenyellow;
+}
+
+/*seleziona gli elementi p che sono immediatamente dopo gli h2*/
+h2 + p {
+    background-color: wheat;
+    color: blue;
+}
+
+/*lo pseudo selettore "hover" applica lo stile specificato solo quando il cursore del mouse
+è sopra gli elementi selezionati dal selettore (in questo caso il selettore è "h2+p" */
+h2 + p:hover {
+    background-color: deepskyblue;
+}
+
+.footerstyle {
+    /* clear:both elimina l'effetto di float dell'immagine che wrappa automaticamente il testo
+    attorno all'immagine, per cui il testo contenuto nell'elemento di classe footerstyle
+     non verrà posto attorno all'immagine e non subirà quindi l'effetto di float */
+    clear: both;
+    text-align: center;
+}
+
+/*L'ultima regola css specificata nel foglio di stile ha la meglio sulle altre e le overrida
+  Anche se uso l'operatore * all'inizio per allineare il testo a dx,
+  il contenuto di h2 e p sarà comunque allineato al centro perchè h2 e p hanno
+  text-align:center che overrida la regola specificata in precedenza con "*".
+
+  "!important" può essere aggiunta come valore di una property per fare in modo che prevalga
+  sulle altre regole CSS impostate per quella property.
+*/
+
+/*REGOLE DI PRECEDENZA E SPECIFICITA'
+    In generale in CSS vince l'ultima regola CSS specificata: l'ultima regola overrida la stessa regola
+    specificata in altri punti dello stylesheet.
+    Gli stili inline sono quelli che prevalgono su tutti!
+*/
